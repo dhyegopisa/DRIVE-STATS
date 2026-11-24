@@ -1,0 +1,109 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>DRIVE STATS | Consumo Automotivo</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>DRIVE <span>STATS</span></h1>
+
+        <nav>
+            <a href="#inicio">Início</a>
+            <a href="#sobre">Sobre</a>
+            <a href="#calculadora">Calculadora</a>
+        </nav>
+    </header>
+
+    <main>
+
+        <section id="inicio" class="inicio">
+
+            <div class="inicio-conteudo">
+                <p class="destaque">DESEMPENHO E EFICIÊNCIA</p>
+
+                <h2>Descubra o consumo do seu <span>veículo</span></h2>
+
+                <p>
+                    Calcule quantos quilômetros seu carro percorre
+                    com cada litro de combustível e conheça sua eficiência.
+                </p>
+
+                <a href="#calculadora" class="botao">Calcular consumo</a>
+            </div>
+
+            <img
+                src="https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?auto=format&fit=crop&w=1200&q=80"
+                alt="Automóvel esportivo em destaque">
+        </section>
+
+        <section id="sobre" class="sobre">
+
+            <h2>Como funciona?</h2>
+
+            <p>
+                A calculadora utiliza a distância percorrida e a quantidade
+                de combustível utilizada para descobrir o consumo médio.
+            </p>
+
+            <ul>
+                <li>Informe a distância percorrida em quilômetros.</li>
+                <li>Informe quantos litros de combustível foram utilizados.</li>
+                <li>Veja o resultado em quilômetros por litro (km/L).</li>
+            </ul>
+
+        </section>
+
+        <section id="calculadora" class="calculadora">
+
+            <h2>Calculadora de consumo</h2>
+
+            <p>Preencha os campos abaixo para calcular o consumo do veículo.</p>
+
+            <form id="formulario">
+
+                <label for="distancia">Distância percorrida (km):</label>
+                <input
+                    type="number"
+                    id="distancia"
+                    placeholder="Ex: 300"
+                    min="0"
+                    step="any"
+                    required>
+
+                <label for="combustivel">Combustível utilizado (litros):</label>
+                <input
+                    type="number"
+                    id="combustivel"
+                    placeholder="Ex: 30"
+                    min="0"
+                    step="any"
+                    required>
+
+                <button type="submit">Calcular resultado</button>
+
+            </form>
+
+            <div id="mensagem" aria-live="polite"></div>
+            <div id="resultado" aria-live="polite"></div>
+
+        </section>
+
+    </main>
+
+    <footer>
+        <p>DRIVE STATS - Projeto de Programação de Aplicativos</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+
+</body>
+</html>
